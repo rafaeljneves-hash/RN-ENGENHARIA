@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RN Engenharia</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+    body { background-color: #f8f9fa; color: #333; scroll-behavior: smooth; }
+    header { background-color: #1b3b5f; color: white; text-align: center; padding: 30px 10px; }
+    header h1 { font-size: 2.2em; letter-spacing: 2px; }
+    header p { font-size: 1em; }
+
+    nav { background-color: #16314d; text-align: center; padding: 10px 0; position: sticky; top: 0; z-index: 100; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; transition: 0.3s; }
+    nav a:hover { color: #00bcd4; }
+
+    section { padding: 60px 20px; text-align: center; }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581091215367-59ab6c7b3f98?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: white; height: 420px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-shadow: 1px 1px 4px #000;
+    }
+    .hero h2 { font-size: 2.8em; }
+    .hero p { font-size: 1.3em; }
+
+    .services h2, .about h2, .portfolio h2, .contact h2 { color: #1b3b5f; margin-bottom: 25px; }
+    .about p { max-width: 700px; margin: 0 auto; font-size: 1.1em; }
+
+    .service-cards {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;
+    }
+    .card {
+      background-color: #f0f3f7; border-radius: 10px; padding: 25px; width: 280px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-10px); }
+    .card h3 { color: #1b3b5f; margin-bottom: 10px; }
+
+    .portfolio-gallery {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px; margin-top: 20px;
+    }
+    .portfolio-gallery img {
+      width: 100%; height: 200px; object-fit: cover; border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s;
+    }
+    .portfolio-gallery img:hover { transform: scale(1.05); }
+
+    form {
+      max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;
+    }
+    input, textarea {
+      padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 1em;
+    }
+    button {
+      background-color: #1b3b5f; color: white; border: none; padding: 10px;
+      border-radius: 5px; cursor: pointer; transition: background-color 0.3s;
+    }
+    button:hover { background-color: #00bcd4; }
+
+    footer {
+      background-color: #1b3b5f; color: white; text-align: center;
+      padding: 20px 10px; margin-top: 40px; font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .service-cards { flex-direction: column; align-items: center; }
+      .hero h2 { font-size: 2em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>RN ENGENHARIA</h1>
+    <p>Construindo com eficiência, qualidade e confiança</p>
+  </header>
+
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#about">Sobre</a>
+    <a href="#services">Serviços</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#contact">Contato</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <h2>Excelência em Engenharia Civil</h2>
+    <p>Projetos, Execução e Gerenciamento de Obras</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Sobre a RN Engenharia</h2>
+    <p>A RN Engenharia é uma empresa especializada em soluções completas para construção civil.
+      Atuamos em obras residenciais, comerciais e públicas, com foco em qualidade, inovação e cumprimento rigoroso de prazos.
+      Nossa missão é transformar projetos em realidade, com engenharia inteligente e sustentável.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Nossos Serviços</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Projetos Estruturais</h3>
+        <p>Desenvolvimento de projetos em concreto armado com precisão técnica e eficiência.</p>
+      </div>
+      <div class="card">
+        <h3>Execução de Obras</h3>
+        <p>Gerenciamento e execução completa de obras com equipe técnica qualificada.</p>
+      </div>
+      <div class="card">
+        <h3>Orçamentos e Licitações</h3>
+        <p>Elaboração de planilhas orçamentárias, cotações e documentação para licitações públicas.</p>
+      </div>
+      <div class="card">
+        <h3>Reformas e Ampliações</h3>
+        <p>Serviços personalizados para reformas residenciais e comerciais.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portfólio de Obras</h2>
+    <p>Confira alguns dos nossos projetos e execuções recentes:</p>
+    <div class="portfolio-gallery">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Obra 1">
+      <img src="https://images.unsplash.com/photo-1581091870632-3dfd01cc98cd?auto=format&fit=crop&w=800&q=80" alt="Obra 2">
+      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Obra 3">
+      <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Obra 4">
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Fale Conosco</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+      <textarea id="message" rows="4" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+    <p><strong>E-mail:</strong> rafaelj.neves@uni9.edu.br</p>
+    <p><strong>Telefone:</strong> (11) 95064-4016</p>
+    <p><strong>Empresa:</strong> RN Engenharia - FBF Engenharia</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RN Engenharia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Envio do formulário (simulado via mailto)
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+      window.location.href = `mailto:rafaelj.neves@uni9.edu.br?subject=Mensagem de ${name}&body=Email: ${email}%0D%0A${message}`;
+    });
+  </script>
+
+</body>
+</html>
